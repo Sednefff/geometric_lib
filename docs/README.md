@@ -1,4 +1,4 @@
-
+i
 # How to use calculator:
 1. Run `python calculate.py`
 2. Enter the figure name. Available are Circle, Square.
@@ -14,8 +14,9 @@
 - Triangle: `S = sqrt(p * (p-a) * (p-b) * (p-c))` where p is semiperimeter
 
 ## Perimeter
-- Circle: `P = 2πR`
-- Rectangle: `P = 2a + 2b`
-- Square: `P = 4a`
-- Triangle: `P = a + b + c`
+- Circle: P = 2πR
+- Rectangle: P = 2a + 2b
+- Square: P = 4a
+- Triangle: P = a + b + c
+
 
