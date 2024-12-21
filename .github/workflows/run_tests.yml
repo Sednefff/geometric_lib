@@ -7,13 +7,17 @@ on:
       - release
   pull_request:
     branches:
-      - master
+      - main
       - release
       - develop
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      NAME: Вахтин Павел Евгеньевич
+      GROUP: M3114
 
     steps:
       - uses: actions/checkout@v4
@@ -23,8 +27,8 @@ jobs:
           python-version: "3.13"
       - name: Вывод данных
         run: |
-          echo "ФИО: Вахтин Павел Евгеньевич"
-          echo "Номер группы: M3114"
+          echo "ФИО: $NAME"
+          echo "Номер группы: $GROUP"
           echo "Ник на Github: ${{ github.actor }}"
       - name: Установка библиотек
         run: pip install -r requirements.txt
