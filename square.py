@@ -1,8 +1,8 @@
-def area(side):
-    assert side >= 0
-    return side * side
+def area(a):
+    assert a >= 0
+    return a * a
 
 
-def perimeter(side):
-    assert side >= 0
-    return 4 * side
+def perimeter(a):
+    assert a >= 0
+    return 4 * a
