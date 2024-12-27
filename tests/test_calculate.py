@@ -1,7 +1,6 @@
 import unittest
 from calculate import calculate
 
-
 class TestCalculate(unittest.TestCase):
     def test_calculate_circle_area(self):
         # Arrange
