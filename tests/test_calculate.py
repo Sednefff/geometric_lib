@@ -1,8 +1,8 @@
 import unittest
-from calculate import calc
+from calculate import calculate
+
 
 class TestCalculate(unittest.TestCase):
-    
     def test_calculate_circle_area(self):
         # Arrange
         figure = "circle"
@@ -10,8 +10,10 @@ class TestCalculate(unittest.TestCase):
         size = [3]
 
         # Act
-        with self.assertRaises(NameError):  # circle module is not imported dynamically in `calculate.py`
-            calc(figure, function, size)
+        with self.assertRaises(
+            NameError
+        ):  # circle module is not imported dynamically in `calculate.py`
+            calculate(figure, function, size)
 
     def test_calculate_square_perimeter(self):
         # Arrange
@@ -20,8 +22,10 @@ class TestCalculate(unittest.TestCase):
         size = [5]
 
         # Act
-        with self.assertRaises(NameError):  # square module is not imported dynamically in `calculate.py`
-            calc(figure, function, size)
+        with self.assertRaises(
+            NameError
+        ):  # square module is not imported dynamically in `calculate.py`
+            calculate(figure, function, size)
 
     def test_invalid_figure_raises_assertion_error(self):
         # Arrange
@@ -31,7 +35,7 @@ class TestCalculate(unittest.TestCase):
 
         # Act & Assert
         with self.assertRaises(AssertionError):
-            calc(figure, function, size)
+            calculate(figure, function, size)
 
     def test_invalid_function_raises_assertion_error(self):
         # Arrange
@@ -41,7 +45,7 @@ class TestCalculate(unittest.TestCase):
 
         # Act & Assert
         with self.assertRaises(AssertionError):
-            calc(figure, function, size)
+            calculate(figure, function, size)
 
 
 if __name__ == "__main__":
