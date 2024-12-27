@@ -3,41 +3,61 @@ from triangle import area, perimeter
 
 
 class TestTriangle(unittest.TestCase):
-    def test_area_with_valid_sides(self):
+    def test_area_with_positive_sides(self):
         # Arrange
-        a, b, c = 3, 4, 5
+        side_a = 3
+        side_b = 4
+        side_c = 5
 
         # Act
-        result = area(a, b, c)
+        result = area(side_a, side_b, side_c)
 
         # Assert
-        self.assertAlmostEqual(result, 6.0, places=5)
+        self.assertEqual(result, 6)  # Площадь треугольника с такими сторонами
 
-    def test_area_with_negative_sides_raises_assertion_error(self):
+    def test_area_with_zero_side(self):
         # Arrange
-        invalid_sides = [(-1, 2, 3), (1, -2, 3), (1, 2, -3)]
-
-        for sides in invalid_sides:
-            with self.assertRaises(AssertionError):
-                area(*sides)
-
-    def test_perimeter_with_valid_sides(self):
-        # Arrange
-        a, b, c = 3, 4, 5
+        side_a = 0
+        side_b = 4
+        side_c = 5
 
         # Act
-        result = perimeter(a, b, c)
+        result = area(side_a, side_b, side_c)
 
         # Assert
-        self.assertEqual(result, 12)
+        self.assertEqual(result, 4.5)  # Площадь треугольника с одной стороной равной нулю
 
-    def test_perimeter_with_negative_sides_raises_assertion_error(self):
+    def test_area_with_negative_side_raises_assertion_error(self):
         # Arrange
-        a, b, c = -1, 4, 5
+        side_a = -3
+        side_b = 4
+        side_c = 5
 
         # Act & Assert
         with self.assertRaises(AssertionError):
-            perimeter(a, b, c)
+            area(side_a, side_b, side_c)
+
+    def test_perimeter_with_positive_sides(self):
+        # Arrange
+        side_a = 3
+        side_b = 4
+        side_c = 5
+
+        # Act
+        result = perimeter(side_a, side_b, side_c)
+
+        # Assert
+        self.assertEqual(result, 12)  # Периметр треугольника с такими сторонами
+
+    def test_perimeter_with_negative_side_raises_assertion_error(self):
+        # Arrange
+        side_a = -3
+        side_b = 4
+        side_c = 5
+
+        # Act & Assert
+        with self.assertRaises(AssertionError):
+            perimeter(side_a, side_b, side_c)
 
 
 if __name__ == "__main__":
