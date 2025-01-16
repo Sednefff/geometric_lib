@@ -8,3 +8,8 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+
+## Information about INSCRYPTION
+- it is a game
+- PO3 is a traitor
+- take a squirrel
