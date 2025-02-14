@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - new_features_467939
+
+jobs:
+  build-ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Run rectangle tests
+        run: |
+          python rectangle.py
+          
+      - name: Run square tests
+        run: |
+          python square.py
+          
+      - name: Run circle tests
+        run: |
+          python circle.py
+          
+      - name: Run triangle tests
+        run: |
+          python triangle.py
+          
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Run rectangle tests
+        run: |
+          python rectangle.py
+          
+      - name: Run square tests
+        run: |
+          python square.py
+          
+      - name: Run circle tests
+        run: |
+          python circle.py
+          
+      - name: Run triangle tests
+        run: |
+          python triangle.py
