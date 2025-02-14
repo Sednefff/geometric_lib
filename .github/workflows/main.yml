@@ -1,0 +1,24 @@
+on:
+  push:
+    branches: [ "labwork_5_467934" ]
+  pull_request:
+    branches: [ "labwork_5_467934" ]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+          
+      - name: Run tests
+        run: python test.py 
+        continue-on-error: true

@@ -1,0 +1,25 @@
+name: CI
+on: 
+  push:
+    branches: ["labwork4_467771"]
+  pull_request:
+    branches: ["labwork4_467771"] 
+  workflow_dispatch:
+jobs:
+  test: 
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+      fail-fast: false
+    steps: 
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Run tests
+        run: python -m unittest test.py
+        continue-on-error: true
