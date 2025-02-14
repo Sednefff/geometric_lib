@@ -1,0 +1,35 @@
+name: Test my library
+
+on:
+  push:
+    branches: [ "new_features_465296" ]
+  pull_request:
+    branches: [ "new_features_465296" ]
+
+jobs:
+  test-ubuntu-windows:
+    runs-on: ubuntu-latest    
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]  
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+    
+      
+      - name: Run square test
+        run: python -m unittest test_square.py
+
+      - name: Run rectangle test
+        run: python -m unittest test_rectangle.py
+
+      - name: Run triangle test
+        run: python -m unittest test_triangle.py
+
+      - name: Run circle test
+        run: python -m unittest test_circle.py
