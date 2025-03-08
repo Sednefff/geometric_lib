@@ -10,6 +10,7 @@ on:
       - main
       - release
       - develop
+      - feat/tests
 
 jobs:
   test:
