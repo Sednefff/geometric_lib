@@ -10,4 +10,3 @@ def test_calc_circle():
 def test_calc_square():
     assert calc("square", "area", [2]) == 4
     assert calc("square", "perimeter", [3]) == 12
-
