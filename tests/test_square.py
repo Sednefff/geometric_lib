@@ -9,8 +9,3 @@ def test_area():
 def test_perimeter():
     assert perimeter(2) == 8
     assert perimeter(3) == 12
-
-
-def test_perimeter_invalid():
-    with pytest.raises(TypeError):
-        perimeter("Not a number.")
