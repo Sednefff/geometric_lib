@@ -1,4 +1,3 @@
-import pytest
 from triangle import area, perimeter
 
 
