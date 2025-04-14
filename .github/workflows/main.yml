@@ -1,0 +1,47 @@
+name: Python CI/CD 
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  ubuntu_os_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+      - name: run tests
+        run: python -m unittest unittests_rectangle.py
+      - name: run tests
+        run: python -m unittest unittests_square.py
+      - name: run tests
+        run: python -m unittest unittests_circle.py
+      - name: run tests
+        run: python -m unittest unittests_trialgle.py
+
+  windows_os_test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+      - name: run tests
+        run: python -m unittest unittests_rectangle.py
+      - name: run tests
+        run: python -m unittest unittests_square.py
+      - name: run tests
+        run: python -m unittest unittests_circle.py
+      - name: run tests
+        run: python -m unittest unittests_trialgle.py
