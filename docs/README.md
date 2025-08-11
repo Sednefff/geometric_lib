@@ -1,3 +1,4 @@
+(это просто учебная лаба)
 # Math formulas
 ## Area
 - Circle: S = πR²
@@ -7,4 +8,4 @@
 ## Perimeter
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
-- Square: P = 4a
+- Square: P = 4aда вот я изменил
