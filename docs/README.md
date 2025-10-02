@@ -7,4 +7,6 @@
 ## Perimeter
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
-- Square: P = 4aNeed to add new math formulas
+- Square: P = 4a
+
+# TO DO: need to add new math formulas!
