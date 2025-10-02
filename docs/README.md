@@ -1,10 +1,5 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# Geometric Library Documentation
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+This library provides geometric functions for calculations.
+
+Updated documentation via Git practical task.
