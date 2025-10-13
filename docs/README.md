@@ -1,10 +1,31 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# Geometric Lib
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+## 📖 Общее описание решения
+Библиотека **Geometric Lib** — это учебный проект на Python для вычисления площадей и периметров простых геометрических фигур.
+Реализованы функции для круга, квадрата, прямоугольника и треугольника.
+
+---
+
+## ⚙️ Описание функций
+
+### circle.py
+- `area(r)` — вычисляет площадь круга  
+- `perimeter(r)` — вычисляет длину окружности
+
+### square.py
+- `area(a)` — вычисляет площадь квадрата  
+- `perimeter(a)` — вычисляет периметр квадрата
+
+### rectangle.py
+- `area(a, b)` — вычисляет площадь прямоугольника  
+- `perimeter(a, b)` — вычисляет периметр прямоугольника
+
+---
+
+## 🧪 Примеры вызова
+
+```python
+from geometric_lib.square import area, perimeter
+print(area(4))      # 16
+print(perimeter(4)) # 16
+
