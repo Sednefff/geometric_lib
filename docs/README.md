@@ -23,24 +23,22 @@ print(square.area(10)) # 100
 circle.area(r) # Площадь круга с радиусом r
 stadiumArea = circle.area(2) # 12.566370614359
 
-circle.perimeter(r) # Пермистр(длина окружности) круга с радиусом r
+circle.perimeter(r) # Периметр(длина окружности) круга с радиусом r
 coinEdgeLength = circle.perimeter(0.5) # 3.141592653589
 
 square.area(a) # Площадь квадрата со стороной a
 paintingArea = square.area(8) # 64
 
-square.perimeter(a) # Пермистр квадрата со стороной a
+square.perimeter(a) # Периметр квадрата со стороной a
 windowPerimeter = square.perimeter(20) # 80
 
-square.perimeter(a) # Пермистр квадрата со стороной a
+square.perimeter(a) # Периметр квадрата со стороной a
 windowPerimeter = square.perimeter(20) # 80
 ```
-### История изменений
+## История изменения проекта с хешами коммитов
 
-    : Добавлена документация
-    commit d078c8d9ee6155f3cb0e577d28d337b791de28e2 (HEAD -> main, origin/main, origin/HEAD)
-    Date: Thu Mar 4 14:55:29 2021 +0300
-
-    : Добавлены реализации компонент круга и квадрата
-    commit $ba9aeb3cea847b63a91ac378a2addb75868246o
-    Date: Thu Mar 4 14:54:08 2021 +0300
+- 96dbea0 добавила файлы библиотеки
+- b811f95 добавила файл с общим описанием  
+- be216d0 добавила новый файл rectangle.py
+- 1078c8d L-03: Docs added
+- 8ba9aeb L-03: Circle and square added
