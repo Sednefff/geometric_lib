@@ -16,7 +16,7 @@ Calculates the area of a triangle using base and height.
 ```python
 result = area(8, 4)
 print(result)
-
+```
 ## Rectangle Functions (rectangle.py)
 
 ### area(a, b)
@@ -33,3 +33,4 @@ Calculates the area of a rectangle using length and width.
 ```python
 result = area(10, 5)
 print(result)
+```
