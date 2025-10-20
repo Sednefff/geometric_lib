@@ -1,3 +1,6 @@
+# My first contribution
+Added new information about the project.
+
 # Math formulas
 ## Area
 - Circle: S = πR²
