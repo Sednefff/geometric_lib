@@ -1,4 +1,6 @@
 # Math formulas
+*1 + 1 = 3!*
+
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
