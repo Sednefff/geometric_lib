@@ -27,3 +27,6 @@ Please check out License Agreement for personal usage terms and limitations
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
 
+## Изменения
+Это изменение в рамках лабораторной работы по АИС
+Студент: Потапова Анастасия
